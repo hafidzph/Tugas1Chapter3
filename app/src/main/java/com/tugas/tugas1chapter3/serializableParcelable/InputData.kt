@@ -33,8 +33,10 @@ class InputData : AppCompatActivity() {
                                                         binding.inputAddress.text.toString(),
                                                         binding.inputAge.text.toString())
             val moveAct = Intent(this, Choose::class.java)
-            moveAct.putExtra("Parcelable", myDataParcelable)
-            moveAct.putExtra("Serializable", myDataSerializable)
+            moveAct.apply {
+                putExtra("Parcelable", myDataParcelable)
+                putExtra("Serializable", myDataSerializable)
+            }
             startActivity(moveAct)
         }
     }
