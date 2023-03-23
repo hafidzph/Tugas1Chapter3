@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".ChooseMethod">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/parcelable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        android:text="@string/choose_method"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sAndP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/choose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="17dp"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/white"
+        android:text="@string/serializable_parcelable"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bundle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sAndP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="17dp"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/white"
+        android:text="@string/bundle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

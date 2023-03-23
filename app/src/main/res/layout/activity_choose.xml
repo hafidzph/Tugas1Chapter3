@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serializableParcelable.Choose">
+    <androidx.appcompat.widget.AppCompatButton
+        style="?attr/materialIconButtonOutlinedStyle"
+        android:id="@+id/backBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/left_arrow"
+        android:backgroundTint="@color/black"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/parcelable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:textSize="34sp"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        android:text="@string/choose"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/parcelable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/choose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="17dp"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/white"
+        android:text="@string/parcelable"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/serializable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/parcelable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="17dp"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/white"
+        android:text="@string/serializable"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

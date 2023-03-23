@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tugas1Chapter3</string>
+    <string name="personal_data">Personal Data</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="masukkanTL">Masukkan Tahun Lahir</string>
+    <string name="save">SAVE</string>
+    <string name="back">BACK</string>
+    <string name="input_data">INPUT DATA</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="masukkan_nomor_telepon">Masukkan Nomor Telepon</string>
+    <string name="masukkan_alamat_rumah">Masukkan Alamat Rumah</string>
+    <string name="masukkan_umur">Masukkan Umur</string>
+    <string name="parcelable">Parcelable</string>
+    <string name="serializable">Serializable</string>
+    <string name="choose">CHOOSE</string>
+    <string name="choose_method">Select the method of sending data</string>
+    <string name="serializable_parcelable"><![CDATA[Serializable & Parcelable]]></string>
+    <string name="bundle">Bundle</string>
+</resources>
